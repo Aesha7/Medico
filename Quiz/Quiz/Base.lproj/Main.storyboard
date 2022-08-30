@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signs" translatesAutoresizingMaskIntoConstraints="NO" id="rpK-86-Zgu">
+                                <rect key="frame" x="-2" y="251" width="436" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1W-et-m2u">
+                                <rect key="frame" x="174" y="417" width="65" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rqO-Qt-BUx" kind="show" id="wPk-md-vls"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zodiac Element?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZdJ-bu-M8i">
+                                <rect key="frame" x="24" y="169" width="366" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Click &quot;Next&quot; to Learn More!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-Xf-df1">
+                                <rect key="frame" x="6" y="633" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What's Your" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-Yi-t55">
+                                <rect key="frame" x="20" y="110" width="366" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VEK-6U-GNa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="71"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tXv-QG-Lh2">
+            <objects>
+                <viewController id="rqO-Qt-BUx" customClass="secondViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOi-RJ-6I0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckv-kz-Eln">
+                                <rect key="frame" x="35" y="230" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="passionate but temperamental">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1:" destination="ZBP-7a-PKM" eventType="touchUpInside" id="Zmk-1b-l3V"/>
+                                    <action selector="option1:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="deq-KG-FVl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-yL-k9L">
+                                <rect key="frame" x="228" y="230" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="grounded but materialistic">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="copy:" destination="ZBP-7a-PKM" eventType="touchUpInside" id="gb0-2F-sIP"/>
+                                    <action selector="option2:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="VUc-4M-dnZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0T-n3-2lt">
+                                <rect key="frame" x="35" y="453" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="critical thinker but indecisive">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="IJN-5K-Xb6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-5l-p70">
+                                <rect key="frame" x="227" y="453" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="  intuitive but ultra-sensitive">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="J2N-67-vr3"/>
+                                    <action selector="option4:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="xTT-h8-AkB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-ig-bqF">
+                                <rect key="frame" x="80" y="758" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="i81-wB-yNt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-QY-NHb">
+                                <rect key="frame" x="275" y="758" width="60" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="n57-YJ-hr0" kind="showDetail" id="yFp-B7-LMG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-C3-fgu">
+                                <rect key="frame" x="165" y="400" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="rqO-Qt-BUx" eventType="touchUpInside" id="5ky-rg-gOu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="air" translatesAutoresizingMaskIntoConstraints="NO" id="AUV-00-mEk">
+                                <rect key="frame" x="-17" y="453" width="256" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="u27-fK-P6O">
+                                <rect key="frame" x="-17" y="230" width="256" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="Cj1-nn-kQo">
+                                <rect key="frame" x="185" y="230" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Personality Traits" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-BG-zKU">
+                                <rect key="frame" x="24" y="64" width="366" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose the option that best describes you." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fPO-nF-uBR">
+                                <rect key="frame" x="6" y="127" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86j-Aq-2LZ">
+                                <rect key="frame" x="0.0" y="611" width="414" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="18"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-ER-Obu">
+                                <rect key="frame" x="182" y="453" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bmX-Ae-3bE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QaZ-UP-ivg"/>
+                    <connections>
+                        <outlet property="air" destination="AUV-00-mEk" id="ugO-wh-OyH"/>
+                        <outlet property="earth" destination="Cj1-nn-kQo" id="vDl-uS-XE7"/>
+                        <outlet property="fire" destination="u27-fK-P6O" id="g9U-cy-P53"/>
+                        <outlet property="label" destination="86j-Aq-2LZ" id="lvV-PI-aC0"/>
+                        <outlet property="option1view" destination="ckv-kz-Eln" id="JBm-7i-bJX"/>
+                        <outlet property="option2view" destination="AEf-yL-k9L" id="yUm-nR-s0x"/>
+                        <outlet property="option3view" destination="o0T-n3-2lt" id="lfR-Vc-Mdh"/>
+                        <outlet property="option4view" destination="glJ-5l-p70" id="POk-3T-S4r"/>
+                        <outlet property="water" destination="tEd-ER-Obu" id="Ivg-6a-jAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8W9-y9-Tjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZBP-7a-PKM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="70.982142857142847"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="zBW-C8-6U0">
+            <objects>
+                <viewController id="n57-YJ-hr0" customClass="thirdViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMQ-do-iwI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Self-Care Strategies" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AG-z4-pj0">
+                                <rect key="frame" x="-43" y="66" width="501" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose the option that best describes you." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ny-RC-hec">
+                                <rect key="frame" x="6" y="126" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XW-px-kBm">
+                                <rect key="frame" x="35" y="228" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="gardening">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1:" destination="n57-YJ-hr0" eventType="touchUpInside" id="NAd-Tm-jMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZQ-r6-BBv">
+                                <rect key="frame" x="229" y="228" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="warm bath">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option2:" destination="n57-YJ-hr0" eventType="touchUpInside" id="zWJ-Ov-fgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyN-9b-a4J">
+                                <rect key="frame" x="35" y="450" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="impromptu creativity">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="n57-YJ-hr0" eventType="touchUpInside" id="lbk-wa-3Tw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mei-Hm-1ec">
+                                <rect key="frame" x="229" y="450" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="puzzles">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option4:" destination="n57-YJ-hr0" eventType="touchUpInside" id="ToI-0z-sQH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXY-Wv-7g8">
+                                <rect key="frame" x="162" y="396" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="n57-YJ-hr0" eventType="touchUpInside" id="XqK-bu-s48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-Sd-ha3">
+                                <rect key="frame" x="274" y="754" width="60" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Af1-4Q-tOm" kind="show" id="U7e-YK-Ghf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-J1-gd6">
+                                <rect key="frame" x="80" y="754" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rqO-Qt-BUx" kind="show" id="Sio-wq-vie"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="vvR-as-LI5">
+                                <rect key="frame" x="-11" y="228" width="241" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-rC-1PF">
+                                <rect key="frame" x="184" y="228" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-5w-qlA">
+                                <rect key="frame" x="-11" y="450" width="241" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="air" translatesAutoresizingMaskIntoConstraints="NO" id="kCo-5F-eyG">
+                                <rect key="frame" x="184" y="450" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-8U-Ldo">
+                                <rect key="frame" x="0.0" y="608" width="414" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="18"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lgW-g7-Fs0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8bz-db-r4L"/>
+                    <connections>
+                        <outlet property="air" destination="kCo-5F-eyG" id="9kR-Wn-CKN"/>
+                        <outlet property="earth" destination="vvR-as-LI5" id="HDZ-IC-Xg9"/>
+                        <outlet property="fire" destination="4ua-5w-qlA" id="Kvk-pw-ncU"/>
+                        <outlet property="label" destination="hhX-8U-Ldo" id="NwZ-xA-FZu"/>
+                        <outlet property="option1view" destination="8XW-px-kBm" id="ePQ-sk-qPL"/>
+                        <outlet property="option2view" destination="3ZQ-r6-BBv" id="Msb-Jl-SJX"/>
+                        <outlet property="option3view" destination="eyN-9b-a4J" id="y9r-ud-67C"/>
+                        <outlet property="option4view" destination="mei-Hm-1ec" id="mr2-Dn-Jnf"/>
+                        <outlet property="water" destination="Sww-rC-1PF" id="UIV-N9-paP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUP-QO-3U4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.608695652174" y="70.982142857142847"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="GIz-tr-cj1">
+            <objects>
+                <viewController id="Af1-4Q-tOm" customClass="fourthViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MU6-uJ-AtG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="In A Crowd, I Am..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0er-CX-LvM">
+                                <rect key="frame" x="-43" y="64" width="501" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose the option that best describes you." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h78-Ur-1l2">
+                                <rect key="frame" x="6" y="124" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amo-bM-u1n">
+                                <rect key="frame" x="36" y="227" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="sensitive and very private">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1:" destination="Af1-4Q-tOm" eventType="touchUpInside" id="Ros-bg-KcN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3T-RM-JEh">
+                                <rect key="frame" x="36" y="449" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="patient and in comfort zone">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="Af1-4Q-tOm" eventType="touchUpInside" id="2ps-EK-lHc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKZ-4I-RfR">
+                                <rect key="frame" x="229" y="227" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="   socializer and observer">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option2:" destination="Af1-4Q-tOm" eventType="touchUpInside" id="4BB-tn-cgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-N6-VOF">
+                                <rect key="frame" x="229" y="449" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="energetic and spontaneous">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option4:" destination="Af1-4Q-tOm" eventType="touchUpInside" id="eMr-N1-FlU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-VL-xWB">
+                                <rect key="frame" x="162" y="396" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="Af1-4Q-tOm" eventType="touchUpInside" id="8EZ-mk-szH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qas-0J-lvI">
+                                <rect key="frame" x="80" y="751" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="n57-YJ-hr0" kind="show" id="wue-eQ-15b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-pn-nrP">
+                                <rect key="frame" x="273" y="751" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dXe-j3-S0Y" kind="show" id="JSM-k7-INh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2C-O0-yTT">
+                                <rect key="frame" x="0.0" y="607" width="414" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="18"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-Bd-s9b">
+                                <rect key="frame" x="-9" y="449" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-7U-aFw">
+                                <rect key="frame" x="184" y="449" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="air" translatesAutoresizingMaskIntoConstraints="NO" id="tn9-zj-7U7">
+                                <rect key="frame" x="184" y="227" width="241" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-K2-X8O">
+                                <rect key="frame" x="-9" y="227" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oo8-Bo-S5R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BCj-fo-wHt"/>
+                    <connections>
+                        <outlet property="air" destination="tn9-zj-7U7" id="0VR-K7-sSa"/>
+                        <outlet property="earth" destination="7Rd-Bd-s9b" id="gpc-cK-uxa"/>
+                        <outlet property="fire" destination="7Ng-7U-aFw" id="eD3-33-xhg"/>
+                        <outlet property="label" destination="j2C-O0-yTT" id="ZoX-Rn-MO9"/>
+                        <outlet property="option1view" destination="Amo-bM-u1n" id="8UQ-v0-KzW"/>
+                        <outlet property="option2view" destination="eKZ-4I-RfR" id="jjF-QG-e0R"/>
+                        <outlet property="option3view" destination="K3T-RM-JEh" id="Bi4-Fl-dQT"/>
+                        <outlet property="option4view" destination="0ly-N6-VOF" id="Sq1-9O-krE"/>
+                        <outlet property="water" destination="Wag-K2-X8O" id="oui-Ub-Zav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RkV-VO-FeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="70.982142857142847"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="I59-Gl-zId">
+            <objects>
+                <viewController id="dXe-j3-S0Y" customClass="fifthViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgk-H5-lH6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Careers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Jd-TK-aC7">
+                                <rect key="frame" x="-43" y="61" width="501" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="42"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose the option that best describes you." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mpz-dC-1CB">
+                                <rect key="frame" x="6" y="124" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eua-Ve-bb1">
+                                <rect key="frame" x="33" y="227" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="      work with travel">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1:" destination="dXe-j3-S0Y" eventType="touchUpInside" id="GFK-Du-IKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmo-XU-vXs">
+                                <rect key="frame" x="34" y="449" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="  profession in healthcare">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="dXe-j3-S0Y" eventType="touchUpInside" id="EZ2-w6-3kW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HK-nd-UD6">
+                                <rect key="frame" x="229" y="227" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="a CEO position">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option2:" destination="dXe-j3-S0Y" eventType="touchUpInside" id="Zvb-Zg-h66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-Zn-bX8">
+                                <rect key="frame" x="229" y="449" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="9-5 office job">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option4:" destination="dXe-j3-S0Y" eventType="touchUpInside" id="h46-jz-IYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9n-RM-CRi">
+                                <rect key="frame" x="162" y="396" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="dXe-j3-S0Y" eventType="touchUpInside" id="Lkf-cm-u4K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-eK-aw9">
+                                <rect key="frame" x="78" y="749" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Af1-4Q-tOm" kind="show" id="Ifp-kJ-SaL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44c-VG-GJm">
+                                <rect key="frame" x="272" y="749" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gpX-4a-9gR" kind="show" id="dly-Xt-lMO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-hz-rIo">
+                                <rect key="frame" x="0.0" y="607" width="414" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="18"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="RMQ-pi-gMT">
+                                <rect key="frame" x="-11" y="449" width="241" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-QJ-9ID">
+                                <rect key="frame" x="185" y="227" width="239" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-Hj-i8Y">
+                                <rect key="frame" x="185" y="449" width="239" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="air" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-kP-aTM">
+                                <rect key="frame" x="-12" y="227" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hb-NO-ita"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MvT-Z0-au2"/>
+                    <connections>
+                        <outlet property="air" destination="hAi-kP-aTM" id="IKr-cj-WJL"/>
+                        <outlet property="earth" destination="cO9-Hj-i8Y" id="d3e-zr-Fbc"/>
+                        <outlet property="fire" destination="b2w-QJ-9ID" id="yHh-u8-VeB"/>
+                        <outlet property="label" destination="QWe-hz-rIo" id="8XY-c7-nZx"/>
+                        <outlet property="option1view" destination="eua-Ve-bb1" id="cgB-cW-b2F"/>
+                        <outlet property="option2view" destination="4HK-nd-UD6" id="oSH-zj-HVU"/>
+                        <outlet property="option3view" destination="tmo-XU-vXs" id="qYf-e7-3z4"/>
+                        <outlet property="option4view" destination="8lJ-Zn-bX8" id="2Kn-qr-a3P"/>
+                        <outlet property="water" destination="RMQ-pi-gMT" id="yaG-Gx-Kqr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HrR-xP-14P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585.507246376812" y="70.982142857142847"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="o4u-Dk-A0t">
+            <objects>
+                <viewController id="gpX-4a-9gR" customClass="sixthViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y43-vd-3jc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Improvement Areas" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsJ-hr-TAf">
+                                <rect key="frame" x="-43" y="60" width="501" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="38"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose the option that best describes you." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-SJ-abH">
+                                <rect key="frame" x="6" y="126" width="402" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRA-HG-Bkt">
+                                <rect key="frame" x="80" y="747" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dXe-j3-S0Y" kind="show" id="Chp-Ux-ljI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t3-9E-WDC">
+                                <rect key="frame" x="277" y="747" width="63" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="gVd-fN-4IB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-qi-0dU">
+                                <rect key="frame" x="36" y="224" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="  possessive and stubborn">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1:" destination="gpX-4a-9gR" eventType="touchUpInside" id="wko-u4-QXM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLl-cM-0Ko">
+                                <rect key="frame" x="233" y="224" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="  secretive and moody">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option2:" destination="gpX-4a-9gR" eventType="touchUpInside" id="XeT-gU-j52"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLs-qG-Dkl">
+                                <rect key="frame" x="36" y="451" width="150" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="self-centered and impulsive">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3:" destination="gpX-4a-9gR" eventType="touchUpInside" id="JRU-8b-GMo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfv-h7-ozS">
+                                <rect key="frame" x="233" y="451" width="150" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="indecisive and a bad listener">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option4:" destination="gpX-4a-9gR" eventType="touchUpInside" id="x0k-Sq-jVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-BQ-1WH">
+                                <rect key="frame" x="162" y="395" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="gpX-4a-9gR" eventType="touchUpInside" id="Tlr-gE-VKb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-E9-4Y8">
+                                <rect key="frame" x="0.0" y="608" width="414" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="18"/>
+                                <color key="textColor" red="0.49803918600000002" green="0.49803918600000002" blue="0.49803924560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="HLX-xb-Oqm">
+                                <rect key="frame" x="-9" y="224" width="241" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Fxk-2s-X5e">
+                                <rect key="frame" x="193" y="224" width="230" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EH-FPf">
+                                <rect key="frame" x="1" y="451" width="219" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="air" translatesAutoresizingMaskIntoConstraints="NO" id="kgZ-iv-HFl">
+                                <rect key="frame" x="193" y="451" width="231" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hW5-Ob-eCf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NeH-7M-PpS"/>
+                    <connections>
+                        <outlet property="air" destination="kgZ-iv-HFl" id="6gc-qV-JtH"/>
+                        <outlet property="earth" destination="HLX-xb-Oqm" id="j4P-dM-Y0T"/>
+                        <outlet property="fire" destination="IkJ-EH-FPf" id="xIk-mW-b1J"/>
+                        <outlet property="label" destination="BG2-E9-4Y8" id="Dan-sZ-fZ9"/>
+                        <outlet property="option1view" destination="Vub-qi-0dU" id="3Pa-m0-sfR"/>
+                        <outlet property="option2view" destination="YLl-cM-0Ko" id="Z8H-mw-yda"/>
+                        <outlet property="option3view" destination="KLs-qG-Dkl" id="p2h-B4-syv"/>
+                        <outlet property="option4view" destination="Yfv-h7-ozS" id="h1V-3C-FAc"/>
+                        <outlet property="water" destination="Fxk-2s-X5e" id="4c7-WP-atS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8W-Un-dsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3331.884057971015" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Chp-Ux-ljI"/>
+        <segue reference="U7e-YK-Ghf"/>
+        <segue reference="yFp-B7-LMG"/>
+        <segue reference="wPk-md-vls"/>
+        <segue reference="i81-wB-yNt"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="air" width="385" height="395"/>
+        <image name="earth" width="382" height="378"/>
+        <image name="fire" width="375" height="376"/>
+        <image name="signs" width="500" height="500"/>
+        <image name="water" width="361" height="373"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
